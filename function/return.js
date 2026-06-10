@@ -31,3 +31,18 @@ function sum(numbers){
 
 const sumOf= sum([1, 2, 3, 4, 5]);
 console.log(sumOf); 
+
+
+function even(numbers) {
+    const evenNumbers = [];
+    for (let i = 0; i < numbers.length; i++) {
+        const element = numbers[i];
+        if (element % 2 === 0) {
+            evenNumbers.push(element);
+        }
+    }
+    return evenNumbers;
+}
+
+const evenNumbers = even([1, 2, 3, 4, 5, 6]);
+console.log(evenNumbers);
