@@ -18,3 +18,16 @@ function isEven(num) {
 
 console.log(isEven(4)); // This will print true
 console.log(isEven(7)); // This will print false
+
+
+function sum(numbers){
+    let total = 0;
+    for(let i=0; i<numbers.length; i++){
+        const element = numbers[i];
+        total += element;
+    }
+    return total;
+}
+
+const sumOf= sum([1, 2, 3, 4, 5]);
+console.log(sumOf); 
